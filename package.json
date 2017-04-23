@@ -1,7 +1,7 @@
 {
   "name": "mercurious-syntax",
   "theme": "syntax",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An in-house Atom syntax theme using the Mercurious colour palette ",
   "keywords": [
     "syntax",
