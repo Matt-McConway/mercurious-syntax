@@ -2,14 +2,15 @@
   "name": "mercurious-syntax",
   "theme": "syntax",
   "version": "0.1.0",
-  "description": "An in-house Atom syntax theme using the mercurious colour palette ",
+  "description": "An in-house Atom syntax theme using the Mercurious colour palette ",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "mercurious"
   ],
   "repository": "https://github.com/Matt-McConway/mercurious-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.13.0 <2.0.0"
   }
 }
