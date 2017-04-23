@@ -54,12 +54,12 @@ atom-text-editor{
 
 
 //find and replace colours
-atom-text-editor .search-results .marker .region{
+atom-text-editor .search-results .syntax--marker .region{
   background-color: transparent;
   border: 1px solid @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region{
+atom-text-editor .search-results .syntax--marker.current-result .region{
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
@@ -72,19 +72,19 @@ atom-text-editor .search-results .marker.current-result .region{
 .syntax--keyword {
   color: @mercurious-dark-red;
 
-  &.control {
+  &.syntax--control {
     color: @mercurious-dark-red;
   }
 
-  &.operator {
+  &.syntax--operator {
     color: @syntax-text-color;
   }
 
-  &.other.special-method {
+  &.syntax--other.syntax--special-method {
     color: @mercurious-blue;
   }
 
-  &.other.unit {
+  &.syntax--other.syntax--unit {
     color: @syntax-text-color;
   }
 }
@@ -96,19 +96,19 @@ atom-text-editor .search-results .marker.current-result .region{
 .syntax--constant {
   color: @mercurious-red;
 
-  &.character.escape {
+  &.syntax--character.syntax--escape {
     color: @mercurious-light-blue;
   }
 
-  &.numeric {
+  &.syntax--numeric {
     color: @mercurious-light-purple;
   }
 
-  &.other.color {
+  &.syntax--other.syntax--color {
     color: @mercurious-light-blue;
   }
 
-  &.other.symbol {
+  &.syntax--other.syntax--symbol {
     color: @mercurious-green;
   }
 }
@@ -116,16 +116,16 @@ atom-text-editor .search-results .marker.current-result .region{
 .syntax--variable {
   color: @mercurious-light-red;
 
-  &.interpolation {
+  &.syntax--interpolation {
     color: darken(@mercurious-red, 10%);
   }
 
-  &.parameter.function {
+  &.syntax--parameter.syntax--function {
     color: @syntax-text-color;
   }
 }
 
-.syntax--invalid.illegal {
+.syntax--invalid.syntax--illegal {
   background-color: @red;
   color: @syntax-background-color;
 }
@@ -134,120 +134,120 @@ atom-text-editor .search-results .marker.current-result .region{
   color: @mercurious-light-yellow;
 
 
-  &.regexp {
+  &.syntax--regexp {
     color: @mercurious-light-blue;
 
-    .source.ruby.embedded {
+    .syntax--source.syntax--ruby.syntax--embedded {
       color: @mercurious-red;
     }
   }
 
-  &.other.link {
+  &.syntax--other.syntax--link {
     color: @mercurious-red;
   }
 }
 
 .syntax--punctuation {
-  &.definition {
-    &.comment {
+  &.syntax--definition {
+    &.syntax--comment {
       color: @light-gray;
     }
 
-    &.string,
-    &.variable,
-    &.parameters,
-    &.array {
+    &.syntax--string,
+    &.syntax--variable,
+    &.syntax--parameters,
+    &.syntax--array {
       color: @syntax-text-color;
     }
 
-    &.heading,
-    &.identity {
+    &.syntax--heading,
+    &.syntax--identity {
       color: @mercurious-blue;
     }
 
-    &.bold {
+    &.syntax--bold {
       color: @mercurious-light-green;
       font-weight: bold;
     }
 
-    &.italic {
+    &.syntax--italic {
       color: @mercurious-light-green;
       font-style: italic;
     }
   }
 
-  &.section.embedded {
+  &.syntax--section.syntax--embedded {
     color: darken(@red, 10%);
   }
 
 }
 
 .syntax--support {
-  &.class {
+  &.syntax--class {
     color: @mercurious-dark-red;
   }
 
-  &.function  {
+  &.syntax--function  {
     color: @mercurious-light-blue;
 
-    &.any-method {
+    &.syntax--any-method {
       color: @mercurious-blue;
     }
   }
 }
 
 .syntax--entity {
-  &.name.function {
+  &.syntax--name.syntax--function {
     color: @mercurious-blue;
   }
-  &.name.type {
+  &.syntax--name.syntax--type {
     color: @mercurious-yellow;
     text-decoration: underline;
   }
 
-  &.other.inherited-class {
+  &.syntax--other.syntax--inherited-class {
     color: @mercurious-green;
   }
-  &.name.class, &.name.type.class {
+  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
     color: @mercurious-dark-red;
   }
 
-  &.name.section {
+  &.syntax--name.syntax--section {
     color: @mercurious-blue;
   }
 
-  &.name.tag {
+  &.syntax--name.syntax--tag {
     color: @mercurious-red;
     text-decoration: underline;
   }
 
-  &.other.attribute-name {
+  &.syntax--other.syntax--attribute-name {
     color: @mercurious-dark-red;
 
-    &.id {
+    &.syntax--id {
       color: @mercurious-blue;
     }
   }
 }
 
 .syntax--meta {
-  &.class {
+  &.syntax--class {
     color: @mercurious-yellow;
   }
 
-  &.link {
+  &.syntax--link {
     color: @mercurious-yellow;
   }
 
-  &.require {
+  &.syntax--require {
     color: @mercurious-dark-blue;
   }
 
-  &.selector {
+  &.syntax--selector {
     color: @mercurious-purple;
   }
 
-  &.separator {
+  &.syntax--separator {
     background-color: @gray;
     color: @syntax-text-color;
   }
@@ -258,48 +258,48 @@ atom-text-editor .search-results .marker.current-result .region{
 }
 
 .syntax--markup {
-  &.bold {
+  &.syntax--bold {
     color: @mercurious-yellow;
     font-weight: bold;
   }
 
-  &.changed {
+  &.syntax--changed {
     color: @mercurious-purple;
   }
 
-  &.deleted {
+  &.syntax--deleted {
     color: @mercurious-dark-red;
   }
 
-  &.italic {
+  &.syntax--italic {
     color: @mercurious-purple;
     font-style: italic;
   }
 
-  &.heading .punctuation.definition.heading {
+  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
     color: @mercurious-blue;
   }
 
-  &.inserted {
+  &.syntax--inserted {
     color: @mercurious-green;
   }
 
-  &.list {
+  &.syntax--list {
     color: @mercurious-red;
   }
 
-  &.quote {
+  &.syntax--quote {
     color: @mercurious-yellow;
   }
 
-  &.raw.inline {
+  &.syntax--raw.syntax--inline {
     color: @mercurious-dark-green;
   }
 }
 
-.syntax--source.gfm .markup {
+.syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
-  &.heading {
+  &.syntax--heading {
     color: @mercurious-green;
   }
 }
@@ -310,11 +310,11 @@ atom-text-editor[mini] .scroll-view{
 
 
 //Python specific
-atom-text-editor .string.quoted.double.block.python {
+atom-text-editor .syntax--string.syntax--quoted.syntax--double.syntax--block.syntax--python {
   color: @mercurious-dark-yellow;
 
   // Quotes
-  .syntax--punctuation.definition {
+  .syntax--punctuation.syntax--definition {
      color: @mercurious-dark-yellow;
   }
   .syntax--control {
