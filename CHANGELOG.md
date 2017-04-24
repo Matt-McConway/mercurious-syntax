@@ -9,3 +9,6 @@
 
 ## 0.1.2 - Patch 2
 * Update to complete shadow DOM removal (Missed quite a few classes!)
+
+## 0.1.3 - Patch 3
+* Finished python syntax highlighting support. 
