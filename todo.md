@@ -1,5 +1,4 @@
 # TODO
 
-* Python specific syntax highlighting - already made a start with docstrings
-* Adjust colours
-* Beautify
+* Slight adjustments to python related syntax highlighting. Pretty happy with the colours so far though.
+* Beautify - simplify selectors mostly.

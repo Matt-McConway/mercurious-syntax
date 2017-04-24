@@ -308,12 +308,16 @@ atom-text-editor[mini] .scroll-view{
   padding-left: 1px;
 }
 
+///////////////////
+//Python specific//
+///////////////////
 
-//Python specific
+//Doctring
+
 atom-text-editor .syntax--string.syntax--quoted.syntax--double.syntax--block.syntax--python {
   color: @mercurious-dark-yellow;
 
-  // Quotes
+  // Docstring Quotes
   .syntax--punctuation.syntax--definition {
      color: @mercurious-dark-yellow;
   }
@@ -329,3 +333,92 @@ atom-text-editor .syntax--string.syntax--quoted.syntax--double.syntax--block.syn
     color: @mercurious-dark-yellow;
   }
 }
+
+//While and for staments
+.syntax--keyword.syntax--control.syntax--repeat.syntax--python{
+  color: @mercurious-green;
+}
+//if statement
+.syntax--keyword.syntax--control.syntax--conditional.syntax--python{
+  color: @mercurious-green;
+}
+
+//break
+.syntax--keyword.syntax--control.syntax--statement.syntax--python{
+  color: @mercurious-green;
+}
+
+//from
+.syntax--keyword.syntax--control.syntax--import.syntax--from.syntax--python{
+  color: @mercurious-dark-purple;
+}
+
+//import
+.syntax--keyword.syntax--control.syntax--import.syntax--python{
+  color: @mercurious-purple;
+}
+
+//self
+.syntax--variable.syntax--language.syntax--self.syntax--python{
+  color: @mercurious-light-blue;
+}
+
+//print
+.syntax--keyword.syntax--other.syntax--python{
+  color: @mercurious-light-blue;
+}
+
+//function def (def)
+.syntax--storage.syntax--type.syntax--function.syntax--python{
+  color: @mercurious-dark-blue;
+}
+
+//class def (class)
+.syntax--storage.syntax--type.syntax--class.syntax--python{
+  color:@mercurious-dark-red;
+}
+
+//class names
+.syntax--entity.syntax--name.syntax--type.syntax--class.syntax--python{
+  color:@mercurious-red;
+}
+
+//class colon
+.syntax--punctuation.syntax--section.syntax--class.syntax--begin.syntax--python{
+  color: @syntax-text-color;
+}
+
+//class opening bracket for parameters
+.syntax--punctuation.syntax--definition.syntax--inheritance.syntax--begin.syntax--python{
+  color: @syntax-text-color;
+}
+
+
+//class closing bracket for parameters
+.syntax--punctuation.syntax--definition.syntax--inheritance.syntax--end.syntax--python{
+  color: @syntax-text-color;
+}
+
+//class inheritance in the parameter
+.syntax--entity.syntax--other.syntax--inherited-class.syntax--python{
+  color: @mercurious-light-red;
+}
+
+//escape characters e.g. \t, \n
+.syntax--constant.syntax--character.syntax--escape.syntax--python{
+  color: @mercurious-red;
+}
+
+//constants e.g. None, True/False
+.syntax--constant.syntax--language.syntax--python{
+  color: @mercurious-yellow;
+}
+
+
+/*
+//might play around with this in future. Making it the same colour
+//as the line number gutter
+.leading-whitespace{
+  background-color: @light-gray;
+}
+*/
